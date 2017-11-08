@@ -20,7 +20,7 @@ class ActsAsCsv
             @result
         end
 
-        define_method 'initialite' do
+        define_method 'initialize' do
             @result = []
             read
         end
@@ -28,6 +28,7 @@ class ActsAsCsv
 end
 
 class RubyCsv < ActsAsCsv
+    acts_as_csv
 end
 
 m = RubyCsv.new
